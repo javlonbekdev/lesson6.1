@@ -11,6 +11,9 @@
 		5D36493A27A55EAA002A4C5A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D36493927A55EAA002A4C5A /* ContentView.swift */; };
 		5D36493C27A55EAA002A4C5A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5D36493B27A55EAA002A4C5A /* Assets.xcassets */; };
 		5D36493F27A55EAA002A4C5A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5D36493E27A55EAA002A4C5A /* Preview Assets.xcassets */; };
+		5D36494727A55F22002A4C5A /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 5D36494627A55F22002A4C5A /* Alamofire */; };
+		5D69106927A67F2A002C9508 /* Language.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D69106827A67F2A002C9508 /* Language.swift */; };
+		5DAE0B1727A59D0F000FD12C /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5DAE0B1927A59D0F000FD12C /* Localizable.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +22,10 @@
 		5D36493927A55EAA002A4C5A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		5D36493B27A55EAA002A4C5A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5D36493E27A55EAA002A4C5A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		5D69106827A67F2A002C9508 /* Language.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Language.swift; sourceTree = "<group>"; };
+		5D69106B27A68ED5002C9508 /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/Localizable.strings; sourceTree = "<group>"; };
+		5D69106D27A68F13002C9508 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		5DAE0B1827A59D0F000FD12C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5D36494727A55F22002A4C5A /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -53,6 +61,8 @@
 			children = (
 				5D36493727A55EAA002A4C5A /* lesson6_1App.swift */,
 				5D36493927A55EAA002A4C5A /* ContentView.swift */,
+				5D69106827A67F2A002C9508 /* Language.swift */,
+				5DAE0B1927A59D0F000FD12C /* Localizable.strings */,
 				5D36493B27A55EAA002A4C5A /* Assets.xcassets */,
 				5D36493D27A55EAA002A4C5A /* Preview Content */,
 			);
@@ -83,6 +93,9 @@
 			dependencies = (
 			);
 			name = lesson6.1;
+			packageProductDependencies = (
+				5D36494627A55F22002A4C5A /* Alamofire */,
+			);
 			productName = lesson6.1;
 			productReference = 5D36493427A55EAA002A4C5A /* lesson6.1.app */;
 			productType = "com.apple.product-type.application";
@@ -109,8 +122,13 @@
 			knownRegions = (
 				en,
 				Base,
+				ko,
+				"zh-Hans",
 			);
 			mainGroup = 5D36492B27A55EAA002A4C5A;
+			packageReferences = (
+				5D36494527A55F21002A4C5A /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
 			productRefGroup = 5D36493527A55EAA002A4C5A /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -126,6 +144,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5D36493F27A55EAA002A4C5A /* Preview Assets.xcassets in Resources */,
+				5DAE0B1727A59D0F000FD12C /* Localizable.strings in Resources */,
 				5D36493C27A55EAA002A4C5A /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -137,6 +156,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5D69106927A67F2A002C9508 /* Language.swift in Sources */,
 				5D36493A27A55EAA002A4C5A /* ContentView.swift in Sources */,
 				5D36493827A55EAA002A4C5A /* lesson6_1App.swift in Sources */,
 			);
@@ -144,11 +164,25 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXVariantGroup section */
+		5DAE0B1927A59D0F000FD12C /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5DAE0B1827A59D0F000FD12C /* en */,
+				5D69106B27A68ED5002C9508 /* ko */,
+				5D69106D27A68F13002C9508 /* zh-Hans */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
 /* Begin XCBuildConfiguration section */
 		5D36494027A55EAA002A4C5A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
@@ -210,6 +244,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
@@ -341,6 +376,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		5D36494527A55F21002A4C5A /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		5D36494627A55F22002A4C5A /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5D36494527A55F21002A4C5A /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 5D36492C27A55EAA002A4C5A /* Project object */;
 }
